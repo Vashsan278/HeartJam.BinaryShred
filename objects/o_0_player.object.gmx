@@ -31,8 +31,8 @@ energy = 100;
 
 ///initalize variables
 
-// 500 pixels per second, so independent of room speed
-robo_speed = 500/room_speed
+// 250 pixels per second, so independent of room speed
+robo_speed = 250/room_speed
 
 // subimage to start with animation
 // used in Draw event

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_alpha = .5;
+            <string>image_alpha = .1;
 </string>
           </argument>
         </arguments>
@@ -76,15 +76,15 @@ image_index = o_0_player.energy/10;
             <kind>1</kind>
             <string>draw_self();
 
-draw_sprite_ext(6,0,x,y+320,15,1,0,c_white,.5);
-draw_sprite_ext(6,0,x,y-320,15,1,0,c_white,.5);
-draw_sprite_ext(6,0,x,y+640,15,1,0,c_white,.5);
-draw_sprite_ext(6,0,x,y-640,15,1,0,c_white,.5);
-draw_sprite_ext(6,0,x,y+960,15,1,0,c_white,.5);
-draw_sprite_ext(6,0,x,y-960,15,1,0,c_white,.5);
+draw_sprite_ext(5,0,x,y+320,15,1,0,c_white,.1);
+draw_sprite_ext(5,0,x,y-320,15,1,0,c_white,.1);
+draw_sprite_ext(5,0,x,y+640,15,1,0,c_white,.1);
+draw_sprite_ext(5,0,x,y-640,15,1,0,c_white,.1);
+draw_sprite_ext(5,0,x,y+960,15,1,0,c_white,.1);
+draw_sprite_ext(5,0,x,y-960,15,1,0,c_white,.1);
 
-draw_sprite_ext(6,0,x+1440,y,8,1,0,c_white,.5);
-draw_sprite_ext(6,0,x-1440,y,8,1,0,c_white,.5);
+draw_sprite_ext(5,0,x+1440,y,8,1,0,c_white,.1);
+draw_sprite_ext(5,0,x-1440,y,8,1,0,c_white,.1);
 </string>
           </argument>
         </arguments>

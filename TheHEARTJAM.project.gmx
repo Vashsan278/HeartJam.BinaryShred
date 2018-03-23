@@ -14,7 +14,6 @@
     </sprites>
     <sprite>sprites\s_4_block</sprite>
     <sprite>sprites\s_5_light</sprite>
-    <sprite>sprites\s_6_dark</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
