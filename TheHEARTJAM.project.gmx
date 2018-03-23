@@ -16,6 +16,12 @@
     <sprite>sprites\s_light</sprite>
     <sprite>sprites\s_newroom</sprite>
     <sprite>sprites\s_door</sprite>
+    <sprite>sprites\s_frame</sprite>
+    <sprite>sprites\s_bridge</sprite>
+    <sprite>sprites\s_bridge1</sprite>
+    <sprite>sprites\s_enemy</sprite>
+    <sprite>sprites\s_message</sprite>
+    <sprite>sprites\s_sight</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\house_tileset</background>
@@ -26,12 +32,19 @@
     <script>scripts\scr_round_TB.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\o_0_player</object>
-    <object>objects\o_1_block</object>
-    <object>objects\o_2_light</object>
-    <object>objects\o_3_newroom</object>
-    <object>objects\o_4_door</object>
-    <object>objects\o_5_allparent</object>
+    <object>objects\o_player</object>
+    <object>objects\o_block</object>
+    <object>objects\o_light</object>
+    <object>objects\o_newroom</object>
+    <object>objects\o_door</object>
+    <object>objects\o_frame</object>
+    <object>objects\o_bridge</object>
+    <object>objects\o_bridge1</object>
+    <object>objects\o_lever</object>
+    <object>objects\o_enemy</object>
+    <object>objects\o_activate</object>
+    <object>objects\o_message</object>
+    <object>objects\o_sight</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

@@ -33,16 +33,16 @@ energy = 100;
 
 // 250 pixels per second, so independent of room speed
 
-robo_speed = 250/room_speed
+robo_speed = 250/room_speed;
 
 // subimage to start with animation
 // used in Draw event
-robo_frame = 0
+robo_frame = 0;
 
 // change in x and y for robo
 // (aka vertical and horizontal speed)
-robo_dx = 0
-robo_dy = 0
+robo_dx = 0;
+robo_dy = 0;
 </string>
           </argument>
         </arguments>
@@ -134,9 +134,9 @@ else if !key_up &amp;&amp; !key_down
 
     
 //collisions
-if (place_meeting(x+robo_dx,y,1))
+if (place_meeting(x+robo_dx,y,o_block))
 {
-    while(!place_meeting(x+sign(robo_dx),y,1))
+    while(!place_meeting(x+sign(robo_dx),y,o_block))
     {
         x += sign(robo_dx);
     }
@@ -150,9 +150,9 @@ if (place_meeting(x+robo_dx,y,1))
 }
 x += robo_dx;
 
-if (place_meeting(x,y+robo_dy,1))
+if (place_meeting(x,y+robo_dy,o_block))
 {
-    while(!place_meeting(x,y+sign(robo_dy),1))
+    while(!place_meeting(x,y+sign(robo_dy),o_block))
     {
         y += sign(robo_dy);
     }
@@ -170,7 +170,7 @@ y += robo_dy
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="o_3_newroom">
+    <event eventtype="4" ename="o_newroom">
       <action>
         <libid>1</libid>
         <id>603</id>
