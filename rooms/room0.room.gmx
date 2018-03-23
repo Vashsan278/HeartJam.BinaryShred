@@ -62,7 +62,7 @@
     <instance objName="o_door" x="160" y="320" name="inst_D2CC7E49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_bridge" x="224" y="64" name="inst_43A175F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_bridge" x="416" y="320" name="inst_C9AF6F57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_block" x="224" y="0" name="inst_1CF394F4" locked="0" code="" scaleX="8" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="o_block" x="0" y="0" name="inst_EC9B4AED" locked="0" code="" scaleX="1" scaleY="17" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
