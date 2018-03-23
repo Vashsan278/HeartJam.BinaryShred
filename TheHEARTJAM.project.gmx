@@ -18,6 +18,8 @@
     <sprite>sprites\s_door</sprite>
     <sprite>sprites\s_frame</sprite>
     <sprite>sprites\s_bridge</sprite>
+    <sprite>sprites\s_bridge1</sprite>
+    <sprite>sprites\sprite10</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -33,6 +35,7 @@
     <object>objects\o_door</object>
     <object>objects\o_frame</object>
     <object>objects\o_bridge</object>
+    <object>objects\o_bridge1</object>
     <object>objects\o_lever</object>
   </objects>
   <rooms name="rooms">
