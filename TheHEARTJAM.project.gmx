@@ -24,12 +24,12 @@
     <script>scripts\scr_round_TB.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\o_0_player</object>
-    <object>objects\o_1_block</object>
-    <object>objects\o_2_light</object>
-    <object>objects\o_3_newroom</object>
-    <object>objects\o_4_door</object>
-    <object>objects\o_5_allparent</object>
+    <object>objects\o_player</object>
+    <object>objects\o_block</object>
+    <object>objects\o_light</object>
+    <object>objects\o_newroom</object>
+    <object>objects\o_door</object>
+    <object>objects\o_allparent</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
