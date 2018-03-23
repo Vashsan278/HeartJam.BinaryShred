@@ -14,6 +14,7 @@
     </sprites>
     <sprite>sprites\s_4_block</sprite>
     <sprite>sprites\s_5_light</sprite>
+    <sprite>sprites\s_6_door</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -25,9 +26,11 @@
     <object>objects\o_0_player</object>
     <object>objects\o_1_block</object>
     <object>objects\o_2_light</object>
+    <object>objects\o_3_door</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
