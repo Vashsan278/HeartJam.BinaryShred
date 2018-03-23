@@ -7,14 +7,15 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="Player">
-      <sprite>sprites\s_0_player_back</sprite>
-      <sprite>sprites\s_1_player_front</sprite>
-      <sprite>sprites\s_2_player_left</sprite>
-      <sprite>sprites\s_3_player_right</sprite>
+      <sprite>sprites\s_player_back</sprite>
+      <sprite>sprites\s_player_front</sprite>
+      <sprite>sprites\s_player_left</sprite>
+      <sprite>sprites\s_player_right</sprite>
     </sprites>
-    <sprite>sprites\s_4_block</sprite>
-    <sprite>sprites\s_5_light</sprite>
-    <sprite>sprites\s_6_door</sprite>
+    <sprite>sprites\s_block</sprite>
+    <sprite>sprites\s_light</sprite>
+    <sprite>sprites\s_newroom</sprite>
+    <sprite>sprites\s_door</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -26,7 +27,9 @@
     <object>objects\o_0_player</object>
     <object>objects\o_1_block</object>
     <object>objects\o_2_light</object>
-    <object>objects\o_3_door</object>
+    <object>objects\o_3_newroom</object>
+    <object>objects\o_4_door</object>
+    <object>objects\o_5_allparent</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
