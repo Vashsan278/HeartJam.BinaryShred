@@ -16,6 +16,8 @@
     <sprite>sprites\s_light</sprite>
     <sprite>sprites\s_newroom</sprite>
     <sprite>sprites\s_door</sprite>
+    <sprite>sprites\s_frame</sprite>
+    <sprite>sprites\s_bridge</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -29,7 +31,9 @@
     <object>objects\o_light</object>
     <object>objects\o_newroom</object>
     <object>objects\o_door</object>
-    <object>objects\o_allparent</object>
+    <object>objects\o_frame</object>
+    <object>objects\o_bridge</object>
+    <object>objects\o_lever</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
