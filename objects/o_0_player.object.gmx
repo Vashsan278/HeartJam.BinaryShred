@@ -32,6 +32,7 @@ energy = 100;
 ///initalize variables
 
 // 250 pixels per second, so independent of room speed
+
 robo_speed = 250/room_speed
 
 // subimage to start with animation
