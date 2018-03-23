@@ -53,16 +53,21 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="o_player" x="160" y="128" name="inst_71B67CC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_block" x="64" y="160" name="inst_750B2259" locked="0" code="" scaleX="3" scaleY="8" colour="4294967295" rotation="0"/>
-    <instance objName="o_block" x="224" y="128" name="inst_83A5056A" locked="0" code="" scaleX="2.03225803375244" scaleY="9" colour="4294967295" rotation="0"/>
-    <instance objName="o_block" x="64" y="64" name="inst_96CCD2D3" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="o_newroom" x="160" y="480" name="inst_F0625154" locked="0" code="new_room = room1;&#xA;new_x = 200;&#xA;new_y = 200;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_door" x="160" y="192" name="inst_3E541169" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_door" x="160" y="320" name="inst_D2CC7E49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_bridge" x="224" y="64" name="inst_43A175F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_bridge" x="416" y="320" name="inst_C9AF6F57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_player" x="96" y="96" name="inst_71B67CC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_block" x="0" y="512" name="inst_750B2259" locked="0" code="" scaleX="29.9354839324951" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_block" x="928" y="0" name="inst_83A5056A" locked="0" code="" scaleX="1.03225803375244" scaleY="17" colour="4294967295" rotation="0"/>
+    <instance objName="o_block" x="0" y="0" name="inst_96CCD2D3" locked="0" code="" scaleX="30" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_newroom" x="672" y="480" name="inst_F0625154" locked="0" code="new_room = room1;&#xA;new_x = 200;&#xA;new_y = 200;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_door" x="672" y="320" name="inst_3E541169" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_door" x="384" y="96" name="inst_D2CC7E49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_bridge" x="608" y="96" name="inst_43A175F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_bridge" x="480" y="320" name="inst_C9AF6F57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="0" y="0" name="inst_EC9B4AED" locked="0" code="" scaleX="1" scaleY="17" colour="4294967295" rotation="0"/>
+    <instance objName="o_enemy" x="96" y="448" name="inst_8EEB9B86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_block" x="608" y="416" name="inst_EE25D118" locked="0" code="" scaleX="1" scaleY="3.09677410125732" colour="4294967295" rotation="0"/>
+    <instance objName="o_block" x="768" y="256" name="inst_A71D97DD" locked="0" code="" scaleX="1" scaleY="8.25806427001953" colour="4294967295" rotation="0"/>
+    <instance objName="o_block" x="480" y="256" name="inst_06F46B95" locked="0" code="" scaleX="10" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_block" x="480" y="416" name="inst_C5F7D9A9" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

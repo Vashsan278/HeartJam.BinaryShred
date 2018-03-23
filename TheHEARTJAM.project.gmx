@@ -19,7 +19,9 @@
     <sprite>sprites\s_frame</sprite>
     <sprite>sprites\s_bridge</sprite>
     <sprite>sprites\s_bridge1</sprite>
-    <sprite>sprites\sprite10</sprite>
+    <sprite>sprites\s_enemy</sprite>
+    <sprite>sprites\s_message</sprite>
+    <sprite>sprites\s_sight</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\house_tileset</background>
@@ -39,6 +41,10 @@
     <object>objects\o_bridge</object>
     <object>objects\o_bridge1</object>
     <object>objects\o_lever</object>
+    <object>objects\o_enemy</object>
+    <object>objects\o_activate</object>
+    <object>objects\o_message</object>
+    <object>objects\o_sight</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
