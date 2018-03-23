@@ -25,16 +25,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///initalize variables
+            <string>instance_create(x,y,2)
 
-// 300 pixels per second, so independent of room speed
+energy = 100;
+
+///initalize variables
+
+// 500 pixels per second, so independent of room speed
 robo_speed = 500/room_speed
 
 // subimage to start with animation
 // used in Draw event
 robo_frame = 0
 
-// change in x and y for gale
+// change in x and y for robo
 // (aka vertical and horizontal speed)
 robo_dx = 0
 robo_dy = 0
@@ -60,7 +64,17 @@ robo_dy = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if keyboard_check(ord('W'))
+            <string>if energy &gt;= 100 {
+    energy = 100;
+}
+
+if energy &lt;= 0 {
+    energy = 0;
+}
+
+// Movement basics
+
+if keyboard_check(ord('W'))
 || keyboard_check(ord('A'))
 || keyboard_check(ord('S'))
 || keyboard_check(ord('D')) {
@@ -150,6 +164,76 @@ if (place_meeting(x,y+robo_dy,1))
     }
 }
 y += robo_dy
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self();
+draw_text(x,y,energy);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="40">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>energy -= 10;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="38">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>energy += 10;
 </string>
           </argument>
         </arguments>

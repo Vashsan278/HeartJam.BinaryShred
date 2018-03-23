@@ -6,11 +6,15 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\s_0_player_back</sprite>
-    <sprite>sprites\s_1_player_font</sprite>
-    <sprite>sprites\s_2_player_left</sprite>
-    <sprite>sprites\s_3_player_right</sprite>
+    <sprites name="Player">
+      <sprite>sprites\s_0_player_back</sprite>
+      <sprite>sprites\s_1_player_font</sprite>
+      <sprite>sprites\s_2_player_left</sprite>
+      <sprite>sprites\s_3_player_right</sprite>
+    </sprites>
     <sprite>sprites\s_4_block</sprite>
+    <sprite>sprites\s_5_light</sprite>
+    <sprite>sprites\s_6_dark</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -21,6 +25,7 @@
   <objects name="objects">
     <object>objects\o_0_player</object>
     <object>objects\o_1_block</object>
+    <object>objects\o_2_light</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
