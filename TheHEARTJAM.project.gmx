@@ -8,7 +8,7 @@
   <sprites name="sprites">
     <sprites name="Player">
       <sprite>sprites\s_0_player_back</sprite>
-      <sprite>sprites\s_1_player_font</sprite>
+      <sprite>sprites\s_1_player_front</sprite>
       <sprite>sprites\s_2_player_left</sprite>
       <sprite>sprites\s_3_player_right</sprite>
     </sprites>
