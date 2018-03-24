@@ -15,13 +15,17 @@
     <sprite>sprites\s_block</sprite>
     <sprite>sprites\s_light</sprite>
     <sprite>sprites\s_newroom</sprite>
-    <sprite>sprites\s_door</sprite>
-    <sprite>sprites\s_frame</sprite>
-    <sprite>sprites\s_bridge</sprite>
-    <sprite>sprites\s_bridge1</sprite>
-    <sprite>sprites\s_enemy</sprite>
-    <sprite>sprites\s_message</sprite>
-    <sprite>sprites\s_sight</sprite>
+    <sprites name="Enemy">
+      <sprite>sprites\s_enemy</sprite>
+      <sprite>sprites\s_sight</sprite>
+    </sprites>
+    <sprites name="Interact">
+      <sprite>sprites\s_message</sprite>
+      <sprite>sprites\s_frame</sprite>
+      <sprite>sprites\s_door</sprite>
+      <sprite>sprites\s_bridge</sprite>
+      <sprite>sprites\s_bridge1</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\house_tileset</background>
@@ -35,16 +39,21 @@
     <object>objects\o_player</object>
     <object>objects\o_block</object>
     <object>objects\o_light</object>
+    <object>objects\o_recharge</object>
     <object>objects\o_newroom</object>
-    <object>objects\o_door</object>
-    <object>objects\o_frame</object>
-    <object>objects\o_bridge</object>
-    <object>objects\o_bridge1</object>
-    <object>objects\o_lever</object>
-    <object>objects\o_enemy</object>
-    <object>objects\o_activate</object>
-    <object>objects\o_message</object>
-    <object>objects\o_sight</object>
+    <objects name="Enemy">
+      <object>objects\o_enemy</object>
+      <object>objects\o_sight</object>
+    </objects>
+    <objects name="Interact">
+      <object>objects\o_message</object>
+      <object>objects\o_activate</object>
+      <object>objects\o_door</object>
+      <object>objects\o_frame</object>
+      <object>objects\o_bridge</object>
+      <object>objects\o_bridge1</object>
+      <object>objects\o_lever</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_alpha = .1;
+            <string>darkness = 0.9;
+image_alpha = darkness;
 </string>
           </argument>
         </arguments>
@@ -76,15 +77,15 @@ image_index = o_player.energy/10;
             <kind>1</kind>
             <string>draw_self();
 
-draw_sprite_ext(s_light,0,x,y+320,15,1,0,c_white,.1);
-draw_sprite_ext(s_light,0,x,y-320,15,1,0,c_white,.1);
-draw_sprite_ext(s_light,0,x,y+640,15,1,0,c_white,.1);
-draw_sprite_ext(s_light,0,x,y-640,15,1,0,c_white,.1);
-draw_sprite_ext(s_light,0,x,y+960,15,1,0,c_white,.1);
-draw_sprite_ext(s_light,0,x,y-960,15,1,0,c_white,.1);
+draw_sprite_ext(s_light,0,x,y+320,15,1,0,c_white,darkness);
+draw_sprite_ext(s_light,0,x,y-320,15,1,0,c_white,darkness);
+draw_sprite_ext(s_light,0,x,y+640,15,1,0,c_white,darkness);
+draw_sprite_ext(s_light,0,x,y-640,15,1,0,c_white,darkness);
+draw_sprite_ext(s_light,0,x,y+960,15,1,0,c_white,darkness);
+draw_sprite_ext(s_light,0,x,y-960,15,1,0,c_white,darkness);
 
-draw_sprite_ext(s_light,0,x+1440,y,8,1,0,c_white,.1);
-draw_sprite_ext(s_light,0,x-1440,y,8,1,0,c_white,.1);
+draw_sprite_ext(s_light,0,x+1440,y,8,1,0,c_white,darkness);
+draw_sprite_ext(s_light,0,x-1440,y,8,1,0,c_white,darkness);
 </string>
           </argument>
         </arguments>
