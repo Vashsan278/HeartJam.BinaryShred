@@ -54,6 +54,8 @@ y = o_enemy.y;
 
 if place_meeting(x,y,o_player) {
     o_enemy.chase = true;
+    image_xscale = 2;
+    image_yscale = 2;
 } else {
     o_enemy.chase = false;
 }

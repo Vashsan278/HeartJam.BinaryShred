@@ -26,7 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>chase = false;
-//sight = 300;
 
 instance_create(x,y,o_sight);
 </string>
@@ -51,21 +50,7 @@ instance_create(x,y,o_sight);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if (x &lt; o_player.x + sight) 
-|| (x &gt; o_player.x - sight)
-|| (y &lt; o_player.y + sight)
-|| (y &gt; o_player.y - sight) {
-    chase = true;
-}*/
-
-/*if (place_meeting(x-64,y,o_player))
-|| (place_meeting(x+64,y,o_player))
-|| (place_meeting(x,y+64,o_player))
-|| (place_meeting(x,y-64,o_player)) {
-    chase = true;
-}*/
-
-if chase = true {
+            <string>if chase = true {
     if x &lt; o_player.x-1 {
         x += o_player.robo_speed / 2;
     }
@@ -78,13 +63,6 @@ if chase = true {
     if y &gt; o_player.y+1 {
         y -= o_player.robo_speed / 2;
     }
-}
-/*
-if (x &gt;= o_player.x + sight)
-|| (x &lt;= o_player.x - sight)
-|| (y &gt;= o_player.y + sight)
-|| (y &lt;= o_player.y - sight) {
-    chase = false;
 }
 </string>
           </argument>
