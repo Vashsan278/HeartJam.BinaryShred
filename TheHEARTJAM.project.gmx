@@ -25,6 +25,8 @@
       <sprite>sprites\s_door</sprite>
       <sprite>sprites\s_bridge</sprite>
       <sprite>sprites\s_bridge1</sprite>
+      <sprite>sprites\sprite14</sprite>
+      <sprite>sprites\s_door_new</sprite>
     </sprites>
     <sprite>sprites\spr_light</sprite>
     <sprite>sprites\spr_wall</sprite>
