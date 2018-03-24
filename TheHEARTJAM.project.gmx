@@ -26,14 +26,19 @@
       <sprite>sprites\s_bridge</sprite>
       <sprite>sprites\s_bridge1</sprite>
     </sprites>
+    <sprite>sprites\spr_light</sprite>
+    <sprite>sprites\spr_wall</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\house_tileset</background>
+    <background>background\bkg_floor</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_round_LR.gml</script>
     <script>scripts\scr_round_TB.gml</script>
+    <script>scripts\light_change_scale.gml</script>
+    <script>scripts\light_update.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\o_player</object>
@@ -53,6 +58,11 @@
       <object>objects\o_bridge</object>
       <object>objects\o_bridge1</object>
       <object>objects\o_lever</object>
+    </objects>
+    <objects name="Light Engine">
+      <object>objects\obj_control</object>
+      <object>objects\obj_light</object>
+      <object>objects\obj_wall</object>
     </objects>
   </objects>
   <rooms name="rooms">
