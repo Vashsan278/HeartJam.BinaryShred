@@ -35,7 +35,7 @@ seen = false;
 
 image_speed = 0.5;
 
-audio_sound_gain(sfx_alert, 0.5, 1);
+audio_sound_gain(sfx_alert, 0.9, 1);
 
 sprint = true;
 </string>
@@ -103,7 +103,7 @@ switch (state) {
             sprint = true;
             if audio_is_playing(mus_danger) {
                 audio_stop_sound(mus_danger);
-                audio_play_sound(mus_overture,9,true);
+                audio_play_sound(mus_overture,5,true);
             }
             o_spawner.sprite_index = s_enemy_spawner_createEnemy;
         }
@@ -138,9 +138,6 @@ switch (state) {
                 y -= o_player.robo_speed / 2;
             }
         }
-    break;
-    case states.wait :
-        
     break;
 }
 </string>

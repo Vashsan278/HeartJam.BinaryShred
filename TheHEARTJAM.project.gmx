@@ -51,6 +51,7 @@
       <sprite>sprites\s_button_pressed</sprite>
       <sprite>sprites\s_button_pressing</sprite>
       <sprite>sprites\s_charging_station</sprite>
+      <sprite>sprites\s_button</sprite>
       <sprite>sprites\s_enemy_spawner_idle</sprite>
       <sprite>sprites\s_enemy_spawner_createEnemy</sprite>
     </sprites>
@@ -95,8 +96,6 @@
     <sprites name="Menu">
       <sprite>sprites\s_begin</sprite>
       <sprite>sprites\s_title</sprite>
-      <sprite>sprites\s_main_menu</sprite>
-      <sprite>sprites\s_game_over</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -182,9 +181,10 @@
     <room>rooms\mainmenu</room>
     <room>rooms\room0_realDeal</room>
     <room>rooms\Test_Room</room>
+    <room>rooms\room5</room>
     <room>rooms\room0</room>
     <room>rooms\room1</room>
-    <room>rooms\room5</room>
+    <room>rooms\gameover</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
