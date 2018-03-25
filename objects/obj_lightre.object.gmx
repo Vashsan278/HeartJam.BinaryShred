@@ -29,7 +29,7 @@
 sur = surface_create(sprite_width, sprite_height);
 image_blend = c_yellow;
 
-flicker = false
+flicker = false;
 delay = 15;
 alarm[0] = delay;
 
