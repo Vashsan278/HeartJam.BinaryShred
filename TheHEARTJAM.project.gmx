@@ -93,6 +93,8 @@
     <sprites name="Menu">
       <sprite>sprites\s_begin</sprite>
       <sprite>sprites\s_title</sprite>
+      <sprite>sprites\s_main_menu</sprite>
+      <sprite>sprites\s_game_over</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
