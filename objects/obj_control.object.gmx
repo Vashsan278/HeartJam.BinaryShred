@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1</depth>
+  <depth>-50</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -31,7 +31,7 @@ sur = surface_create(room_width, room_height);
 // Create a light
 m = instance_create(0, 0, obj_light);
 with (m) {
-  light_change_scale(3, 3);
+  light_change_scale(6, 6);
   // Update the light, so it's surface is drawn correctly
   light_update();
 }
@@ -149,7 +149,7 @@ surface_reset_target();
 draw_set_blend_mode_ext(bm_dest_color, bm_zero);
 draw_surface_ext(sur, 0, 0, 1, 1, 0, c_white, 1);
 draw_set_blend_mode(bm_normal);
-
+/*
 // Draw info
 draw_set_color(c_white);
 draw_text(0, 0, string(fps) + "fps#" + string(instance_number(obj_light)) + " lights#" + string(instance_number(obj_wall)) + " casters");

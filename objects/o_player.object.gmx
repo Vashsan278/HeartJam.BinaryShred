@@ -3,7 +3,7 @@
   <spriteName>s_player_front</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-40</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//instance_create(x,y,o_light)
+            <string>instance_create(x,y,o_light)
 energy = 100;
 stasis = false;
 present = false;
@@ -112,6 +112,8 @@ if place_meeting(x,y,o_recharge) {
 
 // Movement basics
 if stasis = false {
+//robo_speed = 250/room_speed;
+
 if keyboard_check(ord('W'))
 || keyboard_check(ord('A'))
 || keyboard_check(ord('S'))
@@ -168,6 +170,10 @@ else if !key_up &amp;&amp; key_down
     robo_dy = robo_speed
 else if !key_up &amp;&amp; !key_down
     robo_dy = 0
+} else {
+    //robo_speed = 0;
+    robo_dx = 0;
+    robo_dy = 0;
 }
     
 //collisions

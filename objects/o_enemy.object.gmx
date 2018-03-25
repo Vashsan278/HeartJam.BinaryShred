@@ -25,9 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>chase = false;
+            <string>instance_create(x,y,o_sight);
+instance_create(x,y,o_spawner);
 
-instance_create(x,y,o_sight);
+state = states.inactive;
+
+wait = 0;;
 </string>
           </argument>
         </arguments>
@@ -50,19 +53,35 @@ instance_create(x,y,o_sight);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if chase = true {
-    if x &lt; o_player.x-1 {
-        x += o_player.robo_speed / 2;
-    }
-    if x &gt; o_player.x+1 {
-        x -= o_player.robo_speed / 2;
-    }
-    if y &lt; o_player.y-1 {
-        y += o_player.robo_speed / 2;
-    }
-    if y &gt; o_player.y+1 {
-        y -= o_player.robo_speed / 2;
-    }
+            <string>switch (state) {
+    case states.inactive :
+        wait++;
+        
+        if wait = 90 {
+            x = xstart;
+            y = ystart;
+            wait = 0;
+        } 
+    break;
+    case states.chase :
+        wait = 0;
+    
+        if x &lt; o_player.x-1 {
+            x += o_player.robo_speed / 2;
+        }
+        if x &gt; o_player.x+1 {
+            x -= o_player.robo_speed / 2;
+        }
+        if y &lt; o_player.y-1 {
+            y += o_player.robo_speed / 2;
+        }
+        if y &gt; o_player.y+1 {
+            y -= o_player.robo_speed / 2;
+        }
+    break;
+    case states.wait :
+        
+    break;
 }
 </string>
           </argument>
@@ -88,9 +107,11 @@ instance_create(x,y,o_sight);
             <kind>1</kind>
             <string>draw_self();
 
-if chase = true {
+if o_enemy.state = states.chase {
     draw_text(o_player.x-5,o_player.y-30,"X")
 }
+
+draw_text(x,y,wait);
 </string>
           </argument>
         </arguments>
