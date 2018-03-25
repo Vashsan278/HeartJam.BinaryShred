@@ -29,11 +29,17 @@
 sur = surface_create(room_width, room_height);
 
 // Create a light
-m = instance_create(0, 0, obj_light);
+m = instance_create(o_player.x, o_player.y, obj_light);
 with (m) {
   light_change_scale(6, 6);
   // Update the light, so it's surface is drawn correctly
   light_update();
+}
+r = instance_create(o_recharge.x, o_recharge.y, obj_lightre);
+with (r) {
+    light_change_scale(6, 6);
+    // Update the light, so it's surface is drawn correctly
+    light_update();
 }
 </string>
           </argument>
@@ -57,12 +63,11 @@ with (m) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Update one light to follow the mouse
-//m.x = mouse_x;
-//m.y = mouse_y;
-
-// Update this light to draw the correct shadows
+            <string>// Update this light to draw the correct shadows
 with (m)
+  light_update();
+  
+with (r)
   light_update();
 </string>
           </argument>
@@ -93,6 +98,9 @@ draw_set_blend_mode(bm_add);
 with (obj_light) {
   draw_surface_ext(sur, x - sprite_width / 2, y - sprite_height / 2, 1, 1, 0, image_blend, 1);
 }
+with (obj_lightre) {
+  draw_surface_ext(sur, x - sprite_width / 2, y - sprite_height / 2, 1, 1, 0, image_blend, 1);
+}
 draw_set_blend_mode(bm_normal);
 surface_reset_target();
 </string>
@@ -118,8 +126,8 @@ surface_reset_target();
           <argument>
             <kind>1</kind>
             <string>// Create a light on mouse position
-/*with (instance_create(mouse_x, mouse_y, obj_light)) {
-  image_blend = make_color_rgb(200 + irandom(55), 200 + irandom(55), 200 + irandom(55));
+/*with (instance_create(o_player.x, o_player.y, obj_lightre)) {
+  image_blend = c_yellow;
   light_change_scale(2, 2);
   light_update();
 }
@@ -149,11 +157,6 @@ surface_reset_target();
 draw_set_blend_mode_ext(bm_dest_color, bm_zero);
 draw_surface_ext(sur, 0, 0, 1, 1, 0, c_white, 1);
 draw_set_blend_mode(bm_normal);
-/*
-// Draw info
-draw_set_color(c_white);
-draw_text(0, 0, string(fps) + "fps#" + string(instance_number(obj_light)) + " lights#" + string(instance_number(obj_wall)) + " casters");
-draw_set_color(c_black);
 </string>
           </argument>
         </arguments>

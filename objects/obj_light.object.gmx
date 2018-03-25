@@ -3,7 +3,7 @@
   <spriteName>spr_light</spriteName>
   <solid>0</solid>
   <visible>0</visible>
-  <depth>-500</depth>
+  <depth>-510</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -27,7 +27,6 @@
             <kind>1</kind>
             <string>// MUST HAVE: Create surface for light;
 sur = surface_create(sprite_width, sprite_height);
-//image_blend = 255;
 
 flicker = false
 //alarm[0] = 5;
@@ -83,10 +82,7 @@ alarm[0] = 5;
             <kind>1</kind>
             <string>x = o_player.x;
 y = o_player.y;
-/*
-image_xscale = o_player.energy/100*1.5;
-image_yscale = o_player.energy/100*1.5;
-*/
+
 if flicker = true {
     image_xscale = 0;
     image_yscale = 0;
