@@ -56,6 +56,13 @@ if place_meeting(x,y,o_player) {
     o_enemy.state = states.chase;
     image_xscale = 2;
     image_yscale = 2;
+    if !audio_is_playing(mus_danger) {
+        audio_play_sound(sfx_alert,9,false);
+        audio_play_sound(mus_danger,9,true);
+    }
+    if audio_is_playing(mus_overture) {
+        audio_stop_sound(mus_overture);
+    }
 } else {
     o_enemy.state = states.inactive;
 }

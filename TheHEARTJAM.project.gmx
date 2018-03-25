@@ -4,7 +4,22 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="SFX">
+      <sound>sound\sfx_alert</sound>
+      <sound>sound\sfx_close</sound>
+      <sound>sound\sfx_death</sound>
+      <sound>sound\sfx_open</sound>
+      <sound>sound\sfx_recharge</sound>
+      <sound>sound\sfx_walk</sound>
+    </sounds>
+    <sounds name="Music">
+      <sound>sound\mus_danger</sound>
+      <sound>sound\mus_gameover</sound>
+      <sound>sound\mus_overture</sound>
+      <sound>sound\mus_safezone</sound>
+    </sounds>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Player">
       <sprite>sprites\s_player_back</sprite>
@@ -31,9 +46,6 @@
       <sprite>sprites\s_testwall2</sprite>
     </sprites>
     <sprites name="Dungeon Blocks">
-      <sprite>sprites\dungeon_tileset_00</sprite>
-      <sprite>sprites\dungeon_tileset_23</sprite>
-      <sprite>sprites\dungeon_tileset_09</sprite>
       <sprite>sprites\dungeon_tileset_30</sprite>
       <sprite>sprites\dungeon_tileset_29</sprite>
       <sprite>sprites\dungeon_tileset_28</sprite>
@@ -41,6 +53,7 @@
       <sprite>sprites\dungeon_tileset_26</sprite>
       <sprite>sprites\dungeon_tileset_25</sprite>
       <sprite>sprites\dungeon_tileset_24</sprite>
+      <sprite>sprites\dungeon_tileset_23</sprite>
       <sprite>sprites\dungeon_tileset_22</sprite>
       <sprite>sprites\dungeon_tileset_16</sprite>
       <sprite>sprites\dungeon_tileset_15</sprite>
@@ -49,6 +62,7 @@
       <sprite>sprites\dungeon_tileset_12</sprite>
       <sprite>sprites\dungeon_tileset_11</sprite>
       <sprite>sprites\dungeon_tileset_10</sprite>
+      <sprite>sprites\dungeon_tileset_09</sprite>
       <sprite>sprites\dungeon_tileset_08</sprite>
       <sprite>sprites\dungeon_tileset_07</sprite>
       <sprite>sprites\dungeon_tileset_06</sprite>
@@ -57,6 +71,7 @@
       <sprite>sprites\dungeon_tileset_03</sprite>
       <sprite>sprites\dungeon_tileset_02</sprite>
       <sprite>sprites\dungeon_tileset_01</sprite>
+      <sprite>sprites\dungeon_tileset_00</sprite>
     </sprites>
     <sprites name="Light Objects">
       <sprite>sprites\spr_light</sprite>
@@ -64,10 +79,15 @@
       <sprite>sprites\s_block</sprite>
       <sprite>sprites\spr_wall</sprite>
     </sprites>
+    <sprites name="Menu">
+      <sprite>sprites\s_begin</sprite>
+      <sprite>sprites\s_title</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\house_tileset</background>
     <background>background\bkg_floor</background>
+    <background>background\menu_controls</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -104,6 +124,10 @@
     <objects name="Walls">
       <object>objects\o_testwall1</object>
       <object>objects\o_testwall2</object>
+    </objects>
+    <objects name="Menu">
+      <object>objects\o_begin</object>
+      <object>objects\o_title</object>
     </objects>
   </objects>
   <rooms name="rooms">
