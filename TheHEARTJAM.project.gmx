@@ -134,6 +134,9 @@
       <object>objects\obj_control</object>
       <object>objects\obj_light</object>
       <object>objects\obj_lightre</object>
+      <object>objects\obj_lightbu</object>
+      <object>objects\obj_lightdo</object>
+      <object>objects\obj_lighten</object>
       <object>objects\obj_wall</object>
     </objects>
     <objects name="Menu">

@@ -91,7 +91,9 @@ robo_dy = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if energy &gt;= 100 {
+            <string>energy -= 0.1;
+
+if energy &gt;= 100 {
     energy = 100;
 }
 
@@ -100,6 +102,7 @@ if energy &lt;= 0 {
 }
 
 if energy = 0 {
+    audio_play_sound(sfx_death,9,false);
     with instance_create(x,y,o_recharge) {
         visible = false;
         image_xscale = -1;
@@ -290,7 +293,7 @@ y += robo_dy
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>energy -= 10;
+            <string>//energy -= 10;
 </string>
           </argument>
         </arguments>
@@ -313,7 +316,7 @@ y += robo_dy
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>energy += 10;
+            <string>//energy += 10;
 </string>
           </argument>
         </arguments>
