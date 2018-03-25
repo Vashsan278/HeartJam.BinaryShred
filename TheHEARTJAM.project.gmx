@@ -30,6 +30,10 @@
     </sprites>
     <sprite>sprites\spr_light</sprite>
     <sprite>sprites\spr_wall</sprite>
+    <sprites name="Walls">
+      <sprite>sprites\s_testwall1</sprite>
+      <sprite>sprites\s_testwall2</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\house_tileset</background>
@@ -51,6 +55,7 @@
     <objects name="Enemy">
       <object>objects\o_enemy</object>
       <object>objects\o_sight</object>
+      <object>objects\o_spawner</object>
     </objects>
     <objects name="Interact">
       <object>objects\o_message</object>
@@ -66,11 +71,17 @@
       <object>objects\obj_light</object>
       <object>objects\obj_wall</object>
     </objects>
+    <objects name="Walls">
+      <object>objects\o_testwall1</object>
+      <object>objects\o_testwall2</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\mainmenu</room>
+    <room>rooms\Test_Room</room>
+    <room>rooms\room3</room>
     <room>rooms\room0</room>
     <room>rooms\room1</room>
-    <room>rooms\Test_Room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
