@@ -26,6 +26,11 @@
       <sprite>sprites\s_player_front</sprite>
       <sprite>sprites\s_player_left</sprite>
       <sprite>sprites\s_player_right</sprite>
+      <sprite>sprites\s_player_idle</sprite>
+      <sprite>sprites\s_player_move_forwards</sprite>
+      <sprite>sprites\s_player_move_backwards</sprite>
+      <sprite>sprites\s_player_move_right</sprite>
+      <sprite>sprites\s_player_move_left</sprite>
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\s_enemy</sprite>
