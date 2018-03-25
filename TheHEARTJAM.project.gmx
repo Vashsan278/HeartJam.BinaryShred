@@ -107,8 +107,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\mainmenu</room>
     <room>rooms\Test_Room</room>
+    <room>rooms\mainmenu</room>
     <room>rooms\room3</room>
     <room>rooms\room0</room>
     <room>rooms\room1</room>

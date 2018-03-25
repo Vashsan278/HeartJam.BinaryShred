@@ -34,7 +34,7 @@ present = false;
 
 // 250 pixels per second, so independent of room speed
 
-robo_speed = 250/room_speed;
+robo_speed = 225/room_speed;
 
 // subimage to start with animation
 // used in Draw event

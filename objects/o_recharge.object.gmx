@@ -29,6 +29,8 @@
     image_xscale = 1;
     //alarm[0] = 100;
 }
+
+image_speed = 0.5;
 </string>
           </argument>
         </arguments>
