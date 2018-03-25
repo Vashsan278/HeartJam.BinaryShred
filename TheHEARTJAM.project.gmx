@@ -49,6 +49,7 @@
       <sprite>sprites\s_button_pressed</sprite>
       <sprite>sprites\s_button_pressing</sprite>
       <sprite>sprites\s_charging_station</sprite>
+      <sprite>sprites\s_button</sprite>
       <sprite>sprites\s_enemy_spawner_idle</sprite>
       <sprite>sprites\s_enemy_spawner_createEnemy</sprite>
     </sprites>
@@ -132,6 +133,8 @@
       <object>objects\obj_control</object>
       <object>objects\obj_light</object>
       <object>objects\obj_lightre</object>
+      <object>objects\obj_lightbu</object>
+      <object>objects\obj_lighten</object>
       <object>objects\obj_wall</object>
     </objects>
     <objects name="Menu">
@@ -174,9 +177,10 @@
   <rooms name="rooms">
     <room>rooms\mainmenu</room>
     <room>rooms\Test_Room</room>
+    <room>rooms\room5</room>
     <room>rooms\room0</room>
     <room>rooms\room1</room>
-    <room>rooms\room5</room>
+    <room>rooms\gameover</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
