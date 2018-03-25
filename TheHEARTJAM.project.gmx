@@ -12,9 +12,6 @@
       <sprite>sprites\s_player_left</sprite>
       <sprite>sprites\s_player_right</sprite>
     </sprites>
-    <sprite>sprites\s_block</sprite>
-    <sprite>sprites\s_light</sprite>
-    <sprite>sprites\s_newroom</sprite>
     <sprites name="Enemy">
       <sprite>sprites\s_enemy</sprite>
       <sprite>sprites\s_sight</sprite>
@@ -25,12 +22,47 @@
       <sprite>sprites\s_door</sprite>
       <sprite>sprites\s_bridge</sprite>
       <sprite>sprites\s_bridge1</sprite>
+      <sprite>sprites\sprite14</sprite>
+      <sprite>sprites\s_door_new</sprite>
+      <sprite>sprites\s_newroom</sprite>
     </sprites>
-    <sprite>sprites\spr_light</sprite>
-    <sprite>sprites\spr_wall</sprite>
     <sprites name="Walls">
       <sprite>sprites\s_testwall1</sprite>
       <sprite>sprites\s_testwall2</sprite>
+    </sprites>
+    <sprites name="Dungeon Blocks">
+      <sprite>sprites\dungeon_tileset_00</sprite>
+      <sprite>sprites\dungeon_tileset_23</sprite>
+      <sprite>sprites\dungeon_tileset_09</sprite>
+      <sprite>sprites\dungeon_tileset_30</sprite>
+      <sprite>sprites\dungeon_tileset_29</sprite>
+      <sprite>sprites\dungeon_tileset_28</sprite>
+      <sprite>sprites\dungeon_tileset_27</sprite>
+      <sprite>sprites\dungeon_tileset_26</sprite>
+      <sprite>sprites\dungeon_tileset_25</sprite>
+      <sprite>sprites\dungeon_tileset_24</sprite>
+      <sprite>sprites\dungeon_tileset_22</sprite>
+      <sprite>sprites\dungeon_tileset_16</sprite>
+      <sprite>sprites\dungeon_tileset_15</sprite>
+      <sprite>sprites\dungeon_tileset_14</sprite>
+      <sprite>sprites\dungeon_tileset_13</sprite>
+      <sprite>sprites\dungeon_tileset_12</sprite>
+      <sprite>sprites\dungeon_tileset_11</sprite>
+      <sprite>sprites\dungeon_tileset_10</sprite>
+      <sprite>sprites\dungeon_tileset_08</sprite>
+      <sprite>sprites\dungeon_tileset_07</sprite>
+      <sprite>sprites\dungeon_tileset_06</sprite>
+      <sprite>sprites\dungeon_tileset_05</sprite>
+      <sprite>sprites\dungeon_tileset_04</sprite>
+      <sprite>sprites\dungeon_tileset_03</sprite>
+      <sprite>sprites\dungeon_tileset_02</sprite>
+      <sprite>sprites\dungeon_tileset_01</sprite>
+    </sprites>
+    <sprites name="Light Objects">
+      <sprite>sprites\spr_light</sprite>
+      <sprite>sprites\s_light</sprite>
+      <sprite>sprites\s_block</sprite>
+      <sprite>sprites\spr_wall</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
