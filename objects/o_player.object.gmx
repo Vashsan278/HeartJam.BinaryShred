@@ -29,6 +29,7 @@
 energy = 100;
 stasis = false;
 present = false;
+walking = 0;
 
 ///initalize variables
 
@@ -108,6 +109,27 @@ if energy = 0 {
 
 if place_meeting(x,y,o_recharge) {
     energy++;
+}
+
+if walking &gt; 0 {
+    if !audio_is_playing(sfx_walk) {
+        audio_play_sound(sfx_walk,9,true);
+    }
+} else {
+    audio_stop_sound(sfx_walk);
+}
+
+if keyboard_check_pressed(ord('W'))
+|| keyboard_check_pressed(ord('A'))
+|| keyboard_check_pressed(ord('S'))
+|| keyboard_check_pressed(ord('D')) {
+    walking += 1;
+}
+if keyboard_check_released(ord('W'))
+|| keyboard_check_released(ord('A'))
+|| keyboard_check_released(ord('S'))
+|| keyboard_check_released(ord('D')) {
+    walking -= 1;
 }
 
 // Movement basics
@@ -304,7 +326,8 @@ y += robo_dy
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_text(x,y,energy);
+//draw_text(x,y,energy);
+//draw_text(x,y,walking);
 </string>
           </argument>
         </arguments>
@@ -327,7 +350,7 @@ draw_text(x,y,energy);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_restart();
+            <string>//game_restart();
 </string>
           </argument>
         </arguments>

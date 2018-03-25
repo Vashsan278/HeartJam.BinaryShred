@@ -66,6 +66,7 @@
     <instance objName="obj_wall" x="704" y="384" name="inst_3639CC3D" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="o_testwall2" x="704" y="288" name="inst_8F565152" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_control" x="224" y="544" name="inst_1C806828" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_enemy" x="736" y="640" name="inst_61A4E14B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="house_tileset" x="288" y="0" w="32" h="32" xo="0" yo="64" id="10001133" name="inst_B24C270E" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
