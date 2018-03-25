@@ -30,8 +30,7 @@ energy = 100;
 stasis = false;
 //present = false;
 walking = 0;
-idle = 0;
-audio_sound_gain(sfx_walk, 1, 1);
+audio_sound_gain(sfx_walk, 0.5, 1);
 
 ///initalize variables
 
@@ -110,7 +109,7 @@ if energy = 0 {
     alarm[0] = 100;
 }
 
-if place_meeting(x,y,o_recharge) &amp;&amp; o_enemy.state != states.chase {
+if place_meeting(x,y,o_recharge) {
     if !audio_is_playing(sfx_recharge) &amp;&amp; energy != 100 {
         audio_play_sound(sfx_recharge,9,false);
     }
@@ -130,7 +129,6 @@ if keyboard_check_pressed(ord('W'))
 || keyboard_check_pressed(ord('S'))
 || keyboard_check_pressed(ord('D')) {
     walking += 1;
-    idle = 0;
 }
 if keyboard_check_released(ord('W'))
 || keyboard_check_released(ord('A'))
@@ -143,27 +141,6 @@ if !keyboard_check(ord('W'))
 &amp;&amp; !keyboard_check(ord('S'))
 &amp;&amp; !keyboard_check(ord('D')) {
     walking = 0;
-    idle++;
-}
-
-if idle = 5 {
-    if sprite_index = s_player_move_forwards {
-        sprite_index = s_player_front;
-    }
-    if sprite_index = s_player_move_backwards {
-        sprite_index = s_player_back;
-    }
-    if sprite_index = s_player_move_right {
-        sprite_index = s_player_right;
-    }
-    if sprite_index = s_player_move_left {
-        sprite_index = s_player_left;
-    }
-}
-
-if idle &gt;= 90 {
-    sprite_index = s_player_idle;
-    image_speed = 0.5;
 }
 
 // Movement basics
@@ -174,31 +151,31 @@ if keyboard_check(ord('W'))
 || keyboard_check(ord('A'))
 || keyboard_check(ord('S'))
 || keyboard_check(ord('D')) {
-    image_speed = 0.5;
+    image_speed = 1;
 } else {
     image_speed = 0;
     image_index = 0;
 }
 
 if keyboard_check(ord('W')) &amp;&amp; !keyboard_check(ord('S')) {
-    sprite_index = s_player_move_backwards;
+    sprite_index = s_player_back;
 }
 
 if keyboard_check(ord('S')) &amp;&amp; !keyboard_check(ord('W')) {
-    sprite_index = s_player_move_forwards;
+    sprite_index = s_player_front;
 }
 
 if keyboard_check(ord('A')) &amp;&amp; !keyboard_check(ord('D')) {
-    sprite_index = s_player_move_left;
+    sprite_index = s_player_left;
 }
 
 if keyboard_check(ord('D')) &amp;&amp; !keyboard_check(ord('A')) {
-    sprite_index = s_player_move_right;
+    sprite_index = s_player_right;
 }
 
-if image_index = 3 {
+/*if image_index = 3 {
     image_index = 0;
-}
+}*/
 
 ///animation and movement
 
@@ -269,36 +246,6 @@ y += robo_dy
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="o_enemy">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>energy--;
-
-if energy &lt;= 0 {
-    audio_stop_all();
-    room_goto(gameover);
-    instance_destroy();
-    audio_play_sound(mus_gameover,5,true);
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="o_newroom">
       <action>
         <libid>1</libid>
@@ -320,11 +267,6 @@ if energy &lt;= 0 {
     room_goto(other.new_room);
     x = other.new_x;
     y = other.new_y;
-    
-    if audio_is_playing(mus_danger) {
-        audio_stop_sound(mus_danger);
-        audio_play_sound(mus_overture,5,true);
-    }
 }
 </string>
           </argument>

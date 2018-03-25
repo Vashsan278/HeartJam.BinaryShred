@@ -28,7 +28,7 @@
             <string>// MUST HAVE: Create surface for light;
 sur = surface_create(sprite_width, sprite_height);
 
-flicker = false;
+flicker = false
 //alarm[0] = 5;
 </string>
           </argument>
