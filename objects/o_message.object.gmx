@@ -2,7 +2,7 @@
 <object>
   <spriteName>s_message</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>-20</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -52,7 +52,7 @@ image_alpha = 0.5;
             <kind>1</kind>
             <string>draw_self();
 
-if place_meeting(x,y,o_player) &amp;&amp; o_player.present = false {
+if place_meeting(x,y,o_player) {
     draw_text(o_player.x-5,o_player.y-30,"!");
 }
 </string>

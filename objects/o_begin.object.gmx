@@ -31,6 +31,7 @@ y = room_height*0.8;
 fade = true;
 
 audio_play_sound(mus_overture,10,true);
+audio_sound_gain(mus_overture, 0.5, 0);
 </string>
           </argument>
         </arguments>
