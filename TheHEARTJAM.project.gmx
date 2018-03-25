@@ -50,6 +50,8 @@
       <sprite>sprites\s_button_pressing</sprite>
       <sprite>sprites\s_charging_station</sprite>
       <sprite>sprites\s_button</sprite>
+      <sprite>sprites\s_enemy_spawner_idle</sprite>
+      <sprite>sprites\s_enemy_spawner_createEnemy</sprite>
     </sprites>
     <sprites name="Walls">
       <sprite>sprites\s_testwall1</sprite>
