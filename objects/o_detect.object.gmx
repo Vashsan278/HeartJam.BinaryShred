@@ -55,7 +55,6 @@ linked = 0;
     if o_door.state = states.opening {
         o_door.state = states.opened;
     
-        audio_sound_gain(sfx_door, 0.3, 0);
         audio_play_sound(sfx_door,11,false);
     }
 //}
