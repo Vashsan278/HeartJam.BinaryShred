@@ -49,18 +49,9 @@
       <sprite>sprites\s_button_pressed</sprite>
       <sprite>sprites\s_button_pressing</sprite>
       <sprite>sprites\s_charging_station</sprite>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <sprite>sprites\s_button</sprite>
-=======
-      <sprite>sprites\s_enemy_spawner_idle</sprite>
-      <sprite>sprites\s_enemy_spawner_createEnemy</sprite>
->>>>>>> master
-=======
       <sprite>sprites\s_button</sprite>
       <sprite>sprites\s_enemy_spawner_idle</sprite>
       <sprite>sprites\s_enemy_spawner_createEnemy</sprite>
->>>>>>> 3cc2d67d5579ef03a66b7e4d9da63abf878b692f
     </sprites>
     <sprites name="Walls">
       <sprite>sprites\s_testwall1</sprite>
@@ -143,6 +134,7 @@
       <object>objects\obj_light</object>
       <object>objects\obj_lightre</object>
       <object>objects\obj_lightbu</object>
+      <object>objects\obj_lightdo</object>
       <object>objects\obj_lighten</object>
       <object>objects\obj_wall</object>
     </objects>

@@ -47,6 +47,12 @@ with (b) {
     // Update the light, so it's surface is drawn correctly
     light_update();
 }
+d = instance_create(o_door.x, o_door.y, obj_lightdo);
+with (d) {
+    light_change_scale(6, 6);
+    // Update the light, so it's surface is drawn correctly
+    light_update();
+}
 e = instance_create(o_enemy.x, o_enemy.y, obj_lighten);
 with (e) {
     light_change_scale(6, 6);
@@ -81,6 +87,8 @@ with (m)
 with (r)
   light_update();
 with (b)
+  light_update();
+with (d)
   light_update();
 with (e)
   light_update();
@@ -117,6 +125,9 @@ with (obj_lightre) {
   draw_surface_ext(sur, x - sprite_width / 2, y - sprite_height / 2, 1, 1, 0, image_blend, 1);
 }
 with (obj_lightbu) {
+  draw_surface_ext(sur, x - sprite_width / 2, y - sprite_height / 2, 1, 1, 0, image_blend, 1);
+}
+with (obj_lightdo) {
   draw_surface_ext(sur, x - sprite_width / 2, y - sprite_height / 2, 1, 1, 0, image_blend, 1);
 }
 with (obj_lighten) {
