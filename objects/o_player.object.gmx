@@ -25,13 +25,28 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>energy--;
+            <string>instance_create(x,y,o_light)
+energy = 100;
+stasis = false;
+//present = false;
+walking = 0;
+idle = 0;
+audio_sound_gain(sfx_walk, 1, 1);
 
-if energy &lt;= 0 {
-    instance_destroy();
-    room_goto(gameover);
-    audio_play_sound(mus_gameover,5,true);
-}
+///initalize variables
+
+// 250 pixels per second, so independent of room speed
+
+robo_speed = 225/room_speed;
+
+// subimage to start with animation
+// used in Draw event
+robo_frame = 0;
+
+// change in x and y for robo
+// (aka vertical and horizontal speed)
+robo_dx = 0;
+robo_dy = 0;
 </string>
           </argument>
         </arguments>
@@ -95,7 +110,7 @@ if energy = 0 {
     alarm[0] = 100;
 }
 
-if place_meeting(x,y,o_recharge) {
+if place_meeting(x,y,o_recharge) &amp;&amp; o_enemy.state != states.chase {
     if !audio_is_playing(sfx_recharge) &amp;&amp; energy != 100 {
         audio_play_sound(sfx_recharge,9,false);
     }
@@ -115,6 +130,7 @@ if keyboard_check_pressed(ord('W'))
 || keyboard_check_pressed(ord('S'))
 || keyboard_check_pressed(ord('D')) {
     walking += 1;
+    idle = 0;
 }
 if keyboard_check_released(ord('W'))
 || keyboard_check_released(ord('A'))
@@ -127,6 +143,27 @@ if !keyboard_check(ord('W'))
 &amp;&amp; !keyboard_check(ord('S'))
 &amp;&amp; !keyboard_check(ord('D')) {
     walking = 0;
+    idle++;
+}
+
+if idle = 5 {
+    if sprite_index = s_player_move_forwards {
+        sprite_index = s_player_front;
+    }
+    if sprite_index = s_player_move_backwards {
+        sprite_index = s_player_back;
+    }
+    if sprite_index = s_player_move_right {
+        sprite_index = s_player_right;
+    }
+    if sprite_index = s_player_move_left {
+        sprite_index = s_player_left;
+    }
+}
+
+if idle &gt;= 90 {
+    sprite_index = s_player_idle;
+    image_speed = 0.5;
 }
 
 // Movement basics
@@ -252,9 +289,9 @@ y += robo_dy
             <string>energy--;
 
 if energy &lt;= 0 {
+    audio_stop_all();
     room_goto(gameover);
-    x = 0;
-    y = 0;
+    instance_destroy();
     audio_play_sound(mus_gameover,5,true);
 }
 </string>
