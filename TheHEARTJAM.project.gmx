@@ -45,6 +45,10 @@
       <sprite>sprites\sprite14</sprite>
       <sprite>sprites\s_door_new</sprite>
       <sprite>sprites\s_newroom</sprite>
+      <sprite>sprites\s_button_unpressed</sprite>
+      <sprite>sprites\s_button_pressed</sprite>
+      <sprite>sprites\s_button_pressing</sprite>
+      <sprite>sprites\s_charging_station</sprite>
     </sprites>
     <sprites name="Walls">
       <sprite>sprites\s_testwall1</sprite>
