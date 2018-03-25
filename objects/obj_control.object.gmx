@@ -84,6 +84,7 @@ with (e) {
             <string>// Update this light to draw the correct shadows
 with (m)
   light_update();
+  
 with (r)
   light_update();
 with (b)
