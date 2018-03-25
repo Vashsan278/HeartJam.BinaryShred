@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>instance_create(x+32,y+32,o_message);
+linkid = 0;
 </string>
           </argument>
         </arguments>
@@ -48,7 +49,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if place_meeting(x,y,o_player) {
+            <string>/*if place_meeting(x,y,o_player) {
     o_player.present = true;
 } else {
     o_player.present = false;
@@ -75,16 +76,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !place_meeting(x,y,o_player) {
+            <string>//if !place_meeting(x,y,o_player) {
+//linkid = o_door.linkid {
     if o_door.state = states.closed {
         o_door.state = states.opening;
+    
+        audio_sound_gain(sfx_open, 0.5, 1);
+        audio_play_sound(sfx_open,9,false);
     }
-    if o_door.state = states.opened {
+//}
+    /*if o_door.state = states.opened {
         o_door.image_xscale = 1;
         o_door.image_yscale = 1;
         o_door.state = states.closing;
-    }
-}
+    }*/
+//}
 </string>
           </argument>
         </arguments>

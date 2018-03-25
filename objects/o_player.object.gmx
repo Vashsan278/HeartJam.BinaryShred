@@ -28,8 +28,9 @@
             <string>instance_create(x,y,o_light)
 energy = 100;
 stasis = false;
-present = false;
+//present = false;
 walking = 0;
+audio_sound_gain(sfx_walk, 0.5, 1);
 
 ///initalize variables
 
@@ -100,6 +101,7 @@ if energy &lt;= 0 {
 
 if energy = 0 {
     with instance_create(x,y,o_recharge) {
+        visible = false;
         image_xscale = -1;
         alarm[0] = 100;
     }
@@ -108,6 +110,9 @@ if energy = 0 {
 }
 
 if place_meeting(x,y,o_recharge) {
+    if !audio_is_playing(sfx_recharge) &amp;&amp; energy != 100 {
+        audio_play_sound(sfx_recharge,9,false);
+    }
     energy++;
 }
 
@@ -130,6 +135,12 @@ if keyboard_check_released(ord('W'))
 || keyboard_check_released(ord('S'))
 || keyboard_check_released(ord('D')) {
     walking -= 1;
+}
+if !keyboard_check(ord('W'))
+&amp;&amp; !keyboard_check(ord('A'))
+&amp;&amp; !keyboard_check(ord('S'))
+&amp;&amp; !keyboard_check(ord('D')) {
+    walking = 0;
 }
 
 // Movement basics
@@ -328,6 +339,7 @@ y += robo_dy
             <string>draw_self();
 //draw_text(x,y,energy);
 //draw_text(x,y,walking);
+//draw_text(x,y,obj_lightre.distance);
 </string>
           </argument>
         </arguments>
