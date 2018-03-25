@@ -26,6 +26,11 @@
       <sprite>sprites\s_player_front</sprite>
       <sprite>sprites\s_player_left</sprite>
       <sprite>sprites\s_player_right</sprite>
+      <sprite>sprites\s_player_idle</sprite>
+      <sprite>sprites\s_player_move_forwards</sprite>
+      <sprite>sprites\s_player_move_backwards</sprite>
+      <sprite>sprites\s_player_move_right</sprite>
+      <sprite>sprites\s_player_move_left</sprite>
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\s_enemy</sprite>
@@ -40,6 +45,10 @@
       <sprite>sprites\s_recharge</sprite>
       <sprite>sprites\s_door_new</sprite>
       <sprite>sprites\s_newroom</sprite>
+      <sprite>sprites\s_button_unpressed</sprite>
+      <sprite>sprites\s_button_pressed</sprite>
+      <sprite>sprites\s_button_pressing</sprite>
+      <sprite>sprites\s_charging_station</sprite>
     </sprites>
     <sprites name="Walls">
       <sprite>sprites\s_testwall1</sprite>
