@@ -31,6 +31,7 @@
       <sprite>sprites\s_player_move_backwards</sprite>
       <sprite>sprites\s_player_move_right</sprite>
       <sprite>sprites\s_player_move_left</sprite>
+      <sprite>sprites\s_player_shadow</sprite>
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\s_enemy</sprite>
@@ -178,6 +179,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\mainmenu</room>
+    <room>rooms\room0_realDeal</room>
     <room>rooms\Test_Room</room>
     <room>rooms\room0</room>
     <room>rooms\room1</room>
