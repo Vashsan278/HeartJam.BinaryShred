@@ -7,7 +7,7 @@
   <sounds name="sound">
     <sounds name="SFX">
       <sound>sound\sfx_alert</sound>
-      <sound>sound\sfx_close</sound>
+      <sound>sound\sfx_door</sound>
       <sound>sound\sfx_death</sound>
       <sound>sound\sfx_open</sound>
       <sound>sound\sfx_recharge</sound>
@@ -37,7 +37,7 @@
       <sprite>sprites\s_door</sprite>
       <sprite>sprites\s_bridge</sprite>
       <sprite>sprites\s_bridge1</sprite>
-      <sprite>sprites\sprite14</sprite>
+      <sprite>sprites\s_recharge</sprite>
       <sprite>sprites\s_door_new</sprite>
       <sprite>sprites\s_newroom</sprite>
     </sprites>
@@ -108,10 +108,11 @@
       <object>objects\o_spawner</object>
     </objects>
     <objects name="Interact">
-      <object>objects\o_message</object>
       <object>objects\o_activate</object>
       <object>objects\o_door</object>
       <object>objects\o_frame</object>
+      <object>objects\o_detect</object>
+      <object>objects\o_message</object>
       <object>objects\o_bridge</object>
       <object>objects\o_bridge1</object>
       <object>objects\o_lever</object>
@@ -119,23 +120,52 @@
     <objects name="Light Engine">
       <object>objects\obj_control</object>
       <object>objects\obj_light</object>
+      <object>objects\obj_lightre</object>
       <object>objects\obj_wall</object>
-    </objects>
-    <objects name="Walls">
-      <object>objects\o_testwall1</object>
-      <object>objects\o_testwall2</object>
     </objects>
     <objects name="Menu">
       <object>objects\o_begin</object>
       <object>objects\o_title</object>
     </objects>
+    <objects name="Dungeon Blocks">
+      <object>objects\o_dungeon_00</object>
+      <object>objects\o_dungeon_01</object>
+      <object>objects\o_dungeon_02</object>
+      <object>objects\o_dungeon_03</object>
+      <object>objects\o_dungeon_04</object>
+      <object>objects\o_dungeon_05</object>
+      <object>objects\o_dungeon_06</object>
+      <object>objects\o_dungeon_07</object>
+      <object>objects\o_dungeon_08</object>
+      <object>objects\o_dungeon_09</object>
+      <object>objects\o_dungeon_10</object>
+      <object>objects\o_dungeon_11</object>
+      <object>objects\o_dungeon_12</object>
+      <object>objects\o_dungeon_13</object>
+      <object>objects\o_dungeon_14</object>
+      <object>objects\o_dungeon_15</object>
+      <object>objects\o_dungeon_16</object>
+      <object>objects\o_dungeon_22</object>
+      <object>objects\o_dungeon_23</object>
+      <object>objects\o_dungeon_24</object>
+      <object>objects\o_dungeon_25</object>
+      <object>objects\o_dungeon_26</object>
+      <object>objects\o_dungeon_27</object>
+      <object>objects\o_dungeon_28</object>
+      <object>objects\o_dungeon_29</object>
+      <object>objects\o_dungeon_30</object>
+    </objects>
+    <objects name="Walls">
+      <object>objects\o_testwall1</object>
+      <object>objects\o_testwall2</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Test_Room</room>
     <room>rooms\mainmenu</room>
-    <room>rooms\room3</room>
+    <room>rooms\Test_Room</room>
     <room>rooms\room0</room>
     <room>rooms\room1</room>
+    <room>rooms\room5</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
