@@ -234,6 +234,7 @@
     <room>rooms\gameover</room>
     <room>rooms\room1</room>
     <room>rooms\room2</room>
+    <room>rooms\roomFinal</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
