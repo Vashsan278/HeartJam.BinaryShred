@@ -96,6 +96,8 @@
     <sprites name="Menu">
       <sprite>sprites\s_begin</sprite>
       <sprite>sprites\s_title</sprite>
+      <sprite>sprites\s_mainmenu</sprite>
+      <sprite>sprites\s_gameover</sprite>
       <sprite>sprites\s_main_menu</sprite>
       <sprite>sprites\s_game_over</sprite>
     </sprites>
@@ -165,8 +167,9 @@
     </objects>
     <objects name="Menu">
       <object>objects\o_begin</object>
-      <object>objects\o_title</object>
+      <object>objects\o_back</object>
       <object>objects\o_gameover</object>
+      <object>objects\o_mainmenu</object>
     </objects>
     <objects name="Dungeon Blocks">
       <object>objects\o_dungeon_00</object>
@@ -221,6 +224,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\mainmenu</room>
+    <room>rooms\Test_Room</room>
     <room>rooms\room0_realDeal</room>
     <room>rooms\old_room05</room>
     <room>rooms\old_room01</room>
