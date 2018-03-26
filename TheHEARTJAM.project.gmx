@@ -223,6 +223,7 @@
       <object>objects\o_pillar_half_mid01</object>
       <object>objects\o_pillar_half_left01</object>
       <object>objects\o_pillar_doorframe01</object>
+      <object>objects\o_pillar_half_doorframe01</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -230,6 +231,8 @@
     <room>rooms\room0</room>
     <room>rooms\room1</room>
     <room>rooms\gameover</room>
+    <room>rooms\room2</room>
+    <room>rooms\roomFinal</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
