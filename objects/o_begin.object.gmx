@@ -51,8 +51,8 @@ audio_master_gain(1);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (room_exists(Test_Room)) {
-    room_goto(Test_Room);
+            <string>if (room_exists(roomFirst)) {
+    room_goto(roomFirst);
 }
 </string>
           </argument>

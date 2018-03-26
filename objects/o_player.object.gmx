@@ -114,7 +114,6 @@ if energy = 0 {
     alarm[0] = 100;
     if o_enemy.state = states.chase {
             room_goto(gameover);
-            instance_destroy();
     }
 }
 
