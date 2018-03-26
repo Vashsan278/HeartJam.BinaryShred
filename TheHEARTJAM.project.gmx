@@ -124,6 +124,7 @@
     <background>background\house_tileset</background>
     <background>background\bkg_floor</background>
     <background>background\menu_controls</background>
+    <background>background\ground_tileset</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -226,6 +227,10 @@
     <room>rooms\room5</room>
     <room>rooms\room0_realDeal</room>
     <room>rooms\gameover</room>
+    <room>rooms\roomFirst</room>
+    <room>rooms\roomSecond</room>
+    <room>rooms\roomThird</room>
+    <room>rooms\roomFinal</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

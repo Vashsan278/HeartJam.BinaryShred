@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_all();
+            <string>instance_destroy(o_player);
+instance_destroy(o_light);
+instance_destroy(o_dust);
+
+audio_stop_all();
 audio_play_sound(mus_gameover,5,true);
 </string>
           </argument>
