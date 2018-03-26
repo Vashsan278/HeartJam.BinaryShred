@@ -165,7 +165,7 @@ switch (state) {
             <string>draw_self();
 
 if o_enemy.state = states.chase {
-    draw_text(o_player.x-5,o_player.y-30,"X")
+    draw_text(o_player.x-5,o_player.y-30,"!")
 }
 
 //draw_text(x,y,wait);

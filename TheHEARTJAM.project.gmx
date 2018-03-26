@@ -32,7 +32,7 @@
       <sprite>sprites\s_player_move_right</sprite>
       <sprite>sprites\s_player_move_left</sprite>
       <sprite>sprites\s_player_shadow</sprite>
-      <sprite>sprites\sprite62</sprite>
+      <sprite>sprites\s_dust</sprite>
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\s_enemy</sprite>
@@ -112,6 +112,7 @@
   </scripts>
   <objects name="objects">
     <object>objects\o_player</object>
+    <object>objects\o_dust</object>
     <object>objects\o_block</object>
     <object>objects\o_light</object>
     <object>objects\o_recharge</object>
@@ -143,6 +144,7 @@
     <objects name="Menu">
       <object>objects\o_begin</object>
       <object>objects\o_title</object>
+      <object>objects\o_gameover</object>
     </objects>
     <objects name="Dungeon Blocks">
       <object>objects\o_dungeon_00</object>

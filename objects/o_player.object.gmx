@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x,y,o_light)
+            <string>instance_create(x,y,o_dust);
+instance_create(x,y,o_light);
 energy = 100;
 stasis = false;
 //present = false;
@@ -403,7 +404,8 @@ if energy &lt;= 0 {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
+            <string>draw_sprite(s_player_shadow,0,x,y+16);
+draw_self();
 //draw_text(x,y,energy);
 //draw_text(x,y,walking);
 //draw_text(x,y,obj_lightre.distance);
