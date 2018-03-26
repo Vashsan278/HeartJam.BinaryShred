@@ -96,6 +96,8 @@
     <sprites name="Menu">
       <sprite>sprites\s_begin</sprite>
       <sprite>sprites\s_title</sprite>
+      <sprite>sprites\s_main_menu</sprite>
+      <sprite>sprites\s_game_over</sprite>
     </sprites>
     <sprites name="Walls_pillars">
       <sprite>sprites\s_pillar_window02</sprite>
