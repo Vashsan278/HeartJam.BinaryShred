@@ -118,6 +118,8 @@
       <sprite>sprites\s_pillar_half_mid02</sprite>
       <sprite>sprites\s_pillar_half_mid01</sprite>
       <sprite>sprites\s_pillar_half_left01</sprite>
+      <sprite>sprites\s_pillar_doorframe01</sprite>
+      <sprite>sprites\s_pillar_half_doorframe01</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -220,16 +222,16 @@
       <object>objects\o_pillar_half_mid02</object>
       <object>objects\o_pillar_half_mid01</object>
       <object>objects\o_pillar_half_left01</object>
+      <object>objects\o_pillar_doorframe01</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\mainmenu</room>
-    <room>rooms\Test_Room</room>
-    <room>rooms\room0_realDeal</room>
-    <room>rooms\old_room05</room>
+    <room>rooms\room0</room>
     <room>rooms\old_room01</room>
     <room>rooms\old_room02</room>
     <room>rooms\gameover</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
