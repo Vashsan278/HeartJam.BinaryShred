@@ -32,7 +32,7 @@
       <sprite>sprites\s_player_move_right</sprite>
       <sprite>sprites\s_player_move_left</sprite>
       <sprite>sprites\s_player_shadow</sprite>
-      <sprite>sprites\sprite62</sprite>
+      <sprite>sprites\s_dust</sprite>
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\s_enemy</sprite>
@@ -51,6 +51,7 @@
       <sprite>sprites\s_button_pressed</sprite>
       <sprite>sprites\s_button_pressing</sprite>
       <sprite>sprites\s_charging_station</sprite>
+      <sprite>sprites\s_button</sprite>
       <sprite>sprites\s_enemy_spawner_idle</sprite>
       <sprite>sprites\s_enemy_spawner_createEnemy</sprite>
     </sprites>
@@ -95,8 +96,6 @@
     <sprites name="Menu">
       <sprite>sprites\s_begin</sprite>
       <sprite>sprites\s_title</sprite>
-      <sprite>sprites\s_main_menu</sprite>
-      <sprite>sprites\s_game_over</sprite>
     </sprites>
     <sprites name="Walls_pillars">
       <sprite>sprites\s_pillar_window02</sprite>
@@ -131,6 +130,7 @@
   </scripts>
   <objects name="objects">
     <object>objects\o_player</object>
+    <object>objects\o_dust</object>
     <object>objects\o_block</object>
     <object>objects\o_light</object>
     <object>objects\o_recharge</object>
@@ -154,12 +154,15 @@
       <object>objects\obj_control</object>
       <object>objects\obj_light</object>
       <object>objects\obj_lightre</object>
+      <object>objects\obj_lightbu</object>
       <object>objects\obj_lightdo</object>
+      <object>objects\obj_lighten</object>
       <object>objects\obj_wall</object>
     </objects>
     <objects name="Menu">
       <object>objects\o_begin</object>
       <object>objects\o_title</object>
+      <object>objects\o_gameover</object>
     </objects>
     <objects name="Dungeon Blocks">
       <object>objects\o_dungeon_00</object>
@@ -216,9 +219,10 @@
     <room>rooms\mainmenu</room>
     <room>rooms\room0_realDeal</room>
     <room>rooms\Test_Room</room>
+    <room>rooms\room5</room>
     <room>rooms\room0</room>
     <room>rooms\room1</room>
-    <room>rooms\room5</room>
+    <room>rooms\gameover</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

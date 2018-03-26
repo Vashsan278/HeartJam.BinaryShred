@@ -27,9 +27,9 @@
             <kind>1</kind>
             <string>// MUST HAVE: Create surface for light;
 sur = surface_create(sprite_width, sprite_height);
-image_blend = c_yellow;
+//image_blend = c_yellow;
 
-flicker = false
+flicker = false;
 delay = 15;
 alarm[0] = delay;
 
@@ -62,10 +62,11 @@ distance = 0;
             <kind>1</kind>
             <string>if flicker = true {
     flicker = false;
+    alarm[0] = delay*5;
 } else {
     flicker = true;
+    alarm[0] = delay;
 }
-alarm[0] = delay;
 </string>
           </argument>
         </arguments>
@@ -99,6 +100,12 @@ if distance &gt; 1 {
 
 if distance &lt; .2 {
     distance = .2;
+}
+
+if o_enemy.state = states.chase {
+    image_blend = c_red;
+} else {
+    image_blend = c_yellow;
 }
 
 if flicker = true {
