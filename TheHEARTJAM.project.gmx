@@ -228,10 +228,8 @@
   <rooms name="rooms">
     <room>rooms\mainmenu</room>
     <room>rooms\room0</room>
-    <room>rooms\old_room01</room>
-    <room>rooms\old_room02</room>
-    <room>rooms\gameover</room>
     <room>rooms\room1</room>
+    <room>rooms\gameover</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
