@@ -27,12 +27,12 @@
             <kind>1</kind>
             <string>image_alpha = 1;
 image_speed = 0.5;
-
+/*
 if sprite_index = s_enemy_spawner_createEnemy {
     if image_index &gt;= 7 {
         sprite_index = s_enemy_spawner_idle;
     }
-}
+}*/
 </string>
           </argument>
         </arguments>
