@@ -227,8 +227,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
     <room>rooms\mainmenu</room>
+    <room>rooms\room0</room>
     <room>rooms\old_room01</room>
     <room>rooms\old_room02</room>
     <room>rooms\gameover</room>
