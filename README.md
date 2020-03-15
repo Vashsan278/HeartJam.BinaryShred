@@ -1,5 +1,2 @@
 # HeartJam.BinaryShred
-
-test push 1
-
-please go away
+Made using GMS 1.4
